@@ -1,0 +1,25 @@
+{
+	"name": "plugins/hd-form",
+	"description": "Standalone, independent Form plugin with REST API, CAPTCHA, notifications, admin UI.",
+	"version": "1.1.0",
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"HDForm\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=8.1",
+		"openspout/openspout": "^4.0",
+		"yahnis-elsts/plugin-update-checker": "^5.7"
+	},
+	"extra": {
+		"notes": "config.platform pins PHP 8.1.0 on purpose: it keeps dependency resolution compatible across every supported runtime (8.1-8.4+). Re-evaluate openspout upgrades against PHP 8.4 before raising the pin."
+	},
+	"config": {
+		"platform": {
+			"php": "8.1.0"
+		},
+		"optimize-autoloader": true
+	}
+}
