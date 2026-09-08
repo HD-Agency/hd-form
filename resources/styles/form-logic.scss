@@ -1,0 +1,13 @@
+// Transition styles for conditional show/hide blocks.
+
+[data-show-if],
+[data-hide-if] {
+	transition:
+		opacity 0.2s ease,
+		max-height 0.3s ease;
+	overflow: hidden;
+
+	&[hidden] {
+		display: none;
+	}
+}
