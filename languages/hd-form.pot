@@ -1,0 +1,763 @@
+# Copyright (C) 2026 HD
+# This file is distributed under the MIT.
+msgid ""
+msgstr ""
+"Project-Id-Version: HD Form 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hd-form\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-26T08:55:20+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 3.0.0-alpha\n"
+"X-Domain: hd-form\n"
+
+#. Plugin Name of the plugin
+#: hd-form.php:3
+msgid "HD Form"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: hd-form.php:4
+#: hd-form.php:8
+msgid "https://webhd.vn"
+msgstr ""
+
+#. Description of the plugin
+#: hd-form.php:9
+msgid "Standalone, theme-independent form plugin with REST API submission, CAPTCHA, honeypot, spam detection, file upload, email notifications, cron jobs, and admin UI."
+msgstr ""
+
+#. Author of the plugin
+#: hd-form.php:7
+msgid "HD"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:29
+msgid "Entry"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:30
+msgid "Entries"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:43
+#: src/Admin/FormEntriesPage.php:248
+#: src/Admin/FormLogsListTable.php:38
+msgid "ID"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:44
+#: src/Admin/FormEntriesPage.php:249
+msgid "Form Type"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:45
+#: src/Admin/FormEntriesPage.php:194
+msgid "Name"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:46
+#: src/Admin/FormEntriesPage.php:195
+#: src/Admin/Settings/NotificationsSection.php:44
+msgid "Email"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:47
+#: src/Admin/FormEntriesPage.php:196
+msgid "Phone"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:48
+#: src/Admin/FormEntriesPage.php:258
+msgid "Status"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:49
+#: src/Admin/FormLogsListTable.php:43
+msgid "IP Address"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:50
+#: src/Admin/FormEntriesPage.php:259
+#: src/Admin/FormLogsListTable.php:44
+msgid "Date"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:65
+msgid "Mark Read"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:66
+msgid "Mark Spam"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:67
+msgid "Move to Trash"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:68
+msgid "Delete Permanently"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:148
+#: src/Admin/FormEntriesListTable.php:222
+#: src/Admin/FormEntriesPage.php:252
+msgid "New"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:149
+#: src/Admin/FormEntriesListTable.php:223
+#: src/Admin/FormEntriesPage.php:253
+msgid "Read"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:150
+#: src/Admin/FormEntriesListTable.php:225
+#: src/Admin/FormEntriesPage.php:254
+msgid "Spam"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:151
+#: src/Admin/FormEntriesListTable.php:224
+#: src/Admin/FormEntriesPage.php:255
+msgid "Starred"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:152
+#: src/Admin/FormEntriesListTable.php:226
+msgid "Trash"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:208
+msgid "View"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:209
+msgid "Are you sure?"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:209
+msgid "Delete"
+msgstr ""
+
+#: src/Admin/FormEntriesListTable.php:221
+msgid "All"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:67
+#: src/Admin/FormEntriesPage.php:68
+#: src/Admin/FormEntriesPage.php:103
+msgid "Form Entries"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:78
+#: src/Admin/FormEntriesPage.php:79
+msgid "All Entries"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:88
+#: src/Admin/FormEntriesPage.php:143
+#: src/Admin/FormLogsPage.php:38
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:124
+msgid "Export XLSX"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:125
+msgid "Export CSV"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:134
+msgid "Search"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:150
+msgid "Entry not found."
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:160
+msgid "Sorry, you are not allowed to edit this entry."
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:167
+msgid "Notes saved."
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:178
+msgid "Entry Details"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:179
+msgid "Back"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:188
+msgid "Form Data"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:234
+msgid "Attachments"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:246
+msgid "Metadata"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:260
+msgid "IP"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:262
+msgid "Source"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:263
+msgid "Medium"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:264
+msgid "Campaign"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:265
+msgid "Referer"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:265
+msgid "Link"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:271
+msgid "Admin Notes"
+msgstr ""
+
+#: src/Admin/FormEntriesPage.php:276
+msgid "Save Notes"
+msgstr ""
+
+#: src/Admin/FormExporter.php:39
+msgid "Unauthorized."
+msgstr ""
+
+#: src/Admin/FormLogsListTable.php:27
+msgid "Log"
+msgstr ""
+
+#: src/Admin/FormLogsListTable.php:28
+#: src/Admin/FormLogsPage.php:29
+msgid "Logs"
+msgstr ""
+
+#: src/Admin/FormLogsListTable.php:39
+msgid "Entry ID"
+msgstr ""
+
+#: src/Admin/FormLogsListTable.php:40
+msgid "Event"
+msgstr ""
+
+#: src/Admin/FormLogsListTable.php:41
+msgid "Message"
+msgstr ""
+
+#: src/Admin/FormLogsListTable.php:42
+msgid "Actor"
+msgstr ""
+
+#: src/Admin/FormLogsListTable.php:108
+msgid "No form logs found."
+msgstr ""
+
+#: src/Admin/FormLogsPage.php:28
+#: src/Admin/FormLogsPage.php:45
+#: src/Admin/Settings/CleanupSection.php:47
+msgid "Form Logs"
+msgstr ""
+
+#: src/Admin/FormSettingsPage.php:68
+#: src/Admin/FormSettingsPage.php:69
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/FormSettingsPage.php:147
+msgid "General"
+msgstr ""
+
+#: src/Admin/FormSettingsPage.php:148
+msgid "CAPTCHA"
+msgstr ""
+
+#: src/Admin/FormSettingsPage.php:149
+msgid "Notifications"
+msgstr ""
+
+#: src/Admin/FormSettingsPage.php:150
+msgid "Success"
+msgstr ""
+
+#: src/Admin/FormSettingsPage.php:151
+msgid "Spam & Validation"
+msgstr ""
+
+#: src/Admin/FormSettingsPage.php:152
+msgid "Cleanup"
+msgstr ""
+
+#: src/Admin/FormSettingsPage.php:156
+#: src/Admin/Settings/PermissionsSection.php:33
+msgid "Permissions"
+msgstr ""
+
+#: src/Admin/FormSettingsPage.php:246
+msgid "Settings saved."
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:30
+msgid "None (disabled)"
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:31
+msgid "Google reCAPTCHA v2"
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:32
+msgid "Google reCAPTCHA v3"
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:33
+msgid "Cloudflare Turnstile"
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:40
+msgid "Default Provider"
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:47
+msgid "Global default. Individual form types can override this in code config."
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:51
+msgid "Network Error Policy"
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:55
+msgid "Allow submissions when CAPTCHA provider verification has a network error."
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:57
+msgid "Default is fail-closed. Enable only when provider outages are a larger business risk than spam."
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:83
+msgid "Site Key"
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:87
+msgid "Secret Key"
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:89
+#: src/Admin/Settings/NotificationsSection.php:86
+#: src/Admin/Settings/NotificationsSection.php:140
+#: src/Admin/Settings/NotificationsSection.php:162
+#: src/Admin/Settings/NotificationsSection.php:192
+msgid "Leave blank to keep existing."
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:90
+msgid "Leave blank to keep the saved secret key."
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:95
+msgid "Score Threshold"
+msgstr ""
+
+#: src/Admin/Settings/CaptchaSection.php:98
+msgid "0.0 (allow all) → 1.0 (strictest)"
+msgstr ""
+
+#: src/Admin/Settings/CleanupSection.php:30
+msgid "Automatic monthly cleanup of old data. Set retention period in days."
+msgstr ""
+
+#: src/Admin/Settings/CleanupSection.php:33
+msgid "Trashed Entries"
+msgstr ""
+
+#: src/Admin/Settings/CleanupSection.php:36
+#: src/Admin/Settings/CleanupSection.php:43
+#: src/Admin/Settings/CleanupSection.php:50
+msgid "days"
+msgstr ""
+
+#: src/Admin/Settings/CleanupSection.php:40
+msgid "Mail Queue (sent/failed)"
+msgstr ""
+
+#: src/Admin/Settings/GeneralSection.php:34
+msgid "Default Email Recipients"
+msgstr ""
+
+#: src/Admin/Settings/GeneralSection.php:37
+msgid "Fallback recipients when a form type has none configured. One email per line."
+msgstr ""
+
+#: src/Admin/Settings/GeneralSection.php:42
+msgid "Email Domain Filter"
+msgstr ""
+
+#: src/Admin/Settings/GeneralSection.php:43
+msgid "Control which email domains are allowed or blocked. One domain per line."
+msgstr ""
+
+#: src/Admin/Settings/GeneralSection.php:46
+msgid "Deny Domains"
+msgstr ""
+
+#: src/Admin/Settings/GeneralSection.php:49
+msgid "Submissions from these email domains will be rejected."
+msgstr ""
+
+#: src/Admin/Settings/GeneralSection.php:53
+msgid "Allow Domains"
+msgstr ""
+
+#: src/Admin/Settings/GeneralSection.php:56
+msgid "If set, ONLY these domains are accepted. Leave empty to allow all (except deny list)."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:38
+msgid "Enable channels and configure credentials. Email is always available."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:46
+msgid "Uses wp_mail(). Recipients are configured per form type or via Default Email Recipients in General tab."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:52
+msgid "Webhook"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:57
+msgid "Endpoint URL"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:60
+msgid "Enter your Zapier, Make, Pabbly or custom CRM Webhook URL."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:64
+msgid "HTTP Method"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:75
+msgid "Payload Format"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:84
+msgid "Secret Key (HMAC)"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:87
+msgid "Optional secret key for X-HD-Signature SHA256 header validation."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:97
+msgid "Google Sheets"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:102
+msgid "Spreadsheet ID"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:105
+msgid "The ID found in your Google Sheet URL (docs.google.com/spreadsheets/d/{ID}/edit)."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:109
+msgid "Tab Name"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:112
+msgid "Sheet tab name (default: Sheet1 or Trang tính1)."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:116
+msgid "Service Account JSON"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:119
+msgid "A service account key is saved. Leave blank to keep it; paste a new key to replace it."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:122
+msgid "Paste Service Account JSON key here..."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:123
+msgid "Google Cloud Console Service Account JSON key. Share your sheet with the client_email as Editor."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:133
+msgid "Telegram"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:138
+#: src/Admin/Settings/NotificationsSection.php:190
+msgid "Bot Token"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:141
+#: src/Admin/Settings/NotificationsSection.php:193
+msgid "Leave blank to keep the saved bot token."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:145
+#: src/Admin/Settings/NotificationsSection.php:197
+msgid "Chat ID"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:155
+msgid "Viber"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:160
+msgid "Auth Token"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:163
+msgid "Leave blank to keep the saved auth token."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:167
+msgid "Receiver"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:171
+msgid "Sender Name"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:175
+msgid "Sender Avatar URL"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:185
+msgid "Zalo"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:207
+msgid "Weekly Email Summary"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:212
+msgid "Recipients"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:215
+msgid "One email per line. Defaults to admin email if empty."
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:219
+msgid "Send Day"
+msgstr ""
+
+#: src/Admin/Settings/NotificationsSection.php:230
+msgid "at 8:00 AM"
+msgstr ""
+
+#: src/Admin/Settings/PermissionsSection.php:34
+msgid "Select which roles can view form entries and logs. Administrators always have full access; the Settings screen additionally requires the WordPress manage_options capability."
+msgstr ""
+
+#: src/Admin/Settings/PermissionsSection.php:38
+msgid "Roles"
+msgstr ""
+
+#: src/Admin/Settings/PermissionsSection.php:55
+msgid "Always Allowed"
+msgstr ""
+
+#: src/Admin/Settings/PermissionsSection.php:57
+#, php-format
+msgid "Grant capability to %s"
+msgstr ""
+
+#: src/Admin/Settings/SpamSection.php:30
+msgid "Spam Check"
+msgstr ""
+
+#: src/Admin/Settings/SpamSection.php:34
+msgid "Enable global spam detection"
+msgstr ""
+
+#: src/Admin/Settings/SpamSection.php:36
+msgid "Checks submissions against Akismet (if active) and WordPress Disallowed Words list (Settings → Discussion). Individual form types can override this in their code config."
+msgstr ""
+
+#: src/Admin/Settings/SpamSection.php:40
+msgid "Minimum Submit Time (seconds)"
+msgstr ""
+
+#: src/Admin/Settings/SpamSection.php:43
+msgid "Reject submissions faster than this. Set 0 to disable."
+msgstr ""
+
+#: src/Admin/Settings/SpamSection.php:47
+msgid "Maximum Render Age (seconds)"
+msgstr ""
+
+#: src/Admin/Settings/SpamSection.php:50
+msgid "Reject stale submissions rendered before this age. Set 0 to disable."
+msgstr ""
+
+#: src/Admin/Settings/SpamSection.php:54
+msgid "Vietnam Phone Only"
+msgstr ""
+
+#: src/Admin/Settings/SpamSection.php:58
+msgid "Only accept Vietnamese phone numbers (0xx / +84xx)."
+msgstr ""
+
+#: src/Admin/Settings/SuccessSection.php:36
+msgid "Use code default"
+msgstr ""
+
+#: src/Admin/Settings/SuccessSection.php:37
+msgid "Show success message"
+msgstr ""
+
+#: src/Admin/Settings/SuccessSection.php:38
+msgid "Redirect to URL"
+msgstr ""
+
+#: src/Admin/Settings/SuccessSection.php:43
+msgid "Choose what happens after a valid submission. Leave fields blank to use the form type defaults from code."
+msgstr ""
+
+#: src/Admin/Settings/SuccessSection.php:62
+msgid "Action"
+msgstr ""
+
+#: src/Admin/Settings/SuccessSection.php:72
+msgid "Redirect URL"
+msgstr ""
+
+#: src/Admin/Settings/SuccessSection.php:75
+msgid "Only same-site URLs are accepted."
+msgstr ""
+
+#: src/Admin/Settings/SuccessSection.php:79
+msgid "Redirect Delay"
+msgstr ""
+
+#: src/Admin/Settings/SuccessSection.php:82
+msgid "seconds, 0 to redirect immediately."
+msgstr ""
+
+#. translators: %s: form type label.
+#: src/Admin/Settings/SuccessSection.php:154
+#, php-format
+msgid "Redirect URL for \"%s\" must be a valid same-site URL."
+msgstr ""
+
+#: src/API/AbstractAPI.php:114
+msgid "Too many requests. Please try again later."
+msgstr ""
+
+#: src/API/FormAPI.php:125
+msgid "Thank you! We have received your information."
+msgstr ""
+
+#: src/Cron/FormEntryCleaner.php:58
+msgid "Monthly"
+msgstr ""
+
+#: src/Cron/MailQueueProcessor.php:51
+msgid "Every 5 minutes"
+msgstr ""
+
+#: src/FileUploadHandler.php:53
+#: src/FileUploadHandler.php:75
+#: src/FormValidator.php:208
+msgid "Invalid upload payload."
+msgstr ""
+
+#: src/FileUploadHandler.php:65
+#: src/FileUploadHandler.php:88
+#: src/FileUploadHandler.php:98
+#: src/FormValidator.php:219
+msgid "File upload error. Please try again."
+msgstr ""
+
+#: src/FileUploadHandler.php:109
+#: src/FormValidator.php:259
+msgid "Please fix uploaded files."
+msgstr ""
+
+#: src/FormManager.php:209
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: src/FormManager.php:321
+msgid "CAPTCHA verification failed."
+msgstr ""
+
+#: src/FormValidator.php:45
+msgid "Missing form type."
+msgstr ""
+
+#: src/FormValidator.php:54
+msgid "Unknown form type."
+msgstr ""
+
+#: src/FormValidator.php:77
+msgid "Invalid email address."
+msgstr ""
+
+#: src/FormValidator.php:82
+msgid "Invalid phone number."
+msgstr ""
+
+#: src/FormValidator.php:99
+#: src/FormValidator.php:143
+msgid "Please fix the errors below."
+msgstr ""
+
+#. translators: %d: maximum allowed field count
+#: src/FormValidator.php:105
+#, php-format
+msgid "Too many fields. Maximum allowed is %d."
+msgstr ""
+
+#. translators: %s: field name
+#: src/FormValidator.php:134
+#, php-format
+msgid "Field \"%s\" is required."
+msgstr ""
+
+#: src/FormValidator.php:228
+msgid "File too large."
+msgstr ""
+
+#: src/FormValidator.php:242
+msgid "This file type is not allowed for security reasons."
+msgstr ""
+
+#: src/FormValidator.php:251
+msgid "Invalid file type. Accepted: PDF, DOCX, ZIP, RAR."
+msgstr ""
+
+#: src/FormValidator.php:417
+#: src/FormValidator.php:423
+msgid "This email domain is not allowed."
+msgstr ""
+
+#: src/Repository/FormEntryRepository.php:64
+msgid "Duplicate submission."
+msgstr ""
