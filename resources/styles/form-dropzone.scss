@@ -1,0 +1,126 @@
+// Drag & Drop upload area styles.
+
+[data-dropzone] {
+	.hd-dropzone-area,
+	.hde-dropzone-area {
+		border: var(--hd-dropzone-border, 2px dashed #cbd5e1);
+		border-radius: var(--hd-dropzone-radius, 0.5rem);
+		padding: var(--hd-dropzone-padding, 1.5rem);
+		text-align: center;
+		cursor: pointer;
+		transition:
+			border-color 0.2s,
+			background-color 0.2s;
+		background: var(--hd-dropzone-bg, #f8fafc);
+
+		:is(.dark &) {
+			border-color: var(--hd-dropzone-border-dark, #475569);
+			background: var(--hd-dropzone-bg-dark, #1e293b);
+		}
+
+		&:hover {
+			border-color: var(--hd-dropzone-hover-border, var(--hd-color-primary, #2271b1));
+			background: var(--hd-dropzone-hover-bg, rgb(34 113 177 / 4%));
+		}
+
+		p {
+			margin: 0 0 0.25rem;
+			font-size: var(--hd-dropzone-title-size, 0.875rem);
+			color: var(--hd-dropzone-title-color, #334155);
+
+			:is(.dark &) {
+				color: var(--hd-dropzone-title-color-dark, #f1f5f9);
+			}
+		}
+	}
+
+	.hd-dropzone-hint,
+	.hde-dropzone-hint {
+		font-size: var(--hd-dropzone-hint-size, 0.75rem);
+		color: var(--hd-dropzone-hint-color, #94a3b8);
+
+		:is(.dark &) {
+			color: var(--hd-dropzone-hint-color-dark, #64748b);
+		}
+	}
+
+	// Drag-over state.
+	&.hd-dropzone--dragover .hd-dropzone-area,
+	&.hde-dropzone--dragover .hde-dropzone-area {
+		border-color: var(--hd-dropzone-hover-border, var(--hd-color-primary, #2271b1));
+		background: var(--hd-dropzone-hover-bg, rgb(34 113 177 / 8%));
+	}
+
+	// Has file — dim the area.
+	&.hd-dropzone--has-file .hd-dropzone-area,
+	&.hde-dropzone--has-file .hde-dropzone-area {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+
+	// File preview.
+	.hd-dropzone-file,
+	.hde-dropzone-file {
+		display: flex;
+		align-items: center;
+		gap: var(--hd-dropzone-file-gap, 0.5rem);
+		padding: var(--hd-dropzone-file-padding, 0.5rem 0.75rem);
+		margin-top: var(--hd-dropzone-file-margin, 0.5rem);
+		background: var(--hd-dropzone-file-bg, #f1f5f9);
+		border-radius: var(--hd-dropzone-file-radius, 0.375rem);
+		font-size: var(--hd-dropzone-file-size, 0.8125rem);
+
+		:is(.dark &) {
+			background: var(--hd-dropzone-file-bg-dark, #334155);
+		}
+
+		&__name {
+			flex: 1;
+			font-weight: 500;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		&__size {
+			color: var(--hd-dropzone-file-size-color, #64748b);
+			flex-shrink: 0;
+
+			:is(.dark &) {
+				color: var(--hd-dropzone-file-size-color-dark, #94a3b8);
+			}
+		}
+
+		&__remove {
+			background: none;
+			border: none;
+			color: var(--hd-dropzone-remove-color, #ef4444);
+			cursor: pointer;
+			font-size: 0.875rem;
+			padding: 2px 4px;
+			line-height: 1;
+			border-radius: 2px;
+			transition: background-color 0.15s;
+
+			&:hover {
+				background: var(--hd-dropzone-remove-hover-bg, rgb(239 68 68 / 10%));
+			}
+		}
+	}
+
+	// Error.
+	.hd-dropzone-error,
+	.hde-dropzone-error {
+		margin-top: 0.5rem;
+		padding: 0.5rem 0.75rem;
+		background: var(--hd-dropzone-error-bg, #fef2f2);
+		color: var(--hd-dropzone-error-color, #dc2626);
+		border-radius: 0.25rem;
+		font-size: 0.8125rem;
+
+		:is(.dark &) {
+			background: var(--hd-dropzone-error-bg-dark, rgb(220 38 38 / 15%));
+			color: var(--hd-dropzone-error-color-dark, #fca5a5);
+		}
+	}
+}

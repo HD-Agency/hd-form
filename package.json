@@ -1,0 +1,10 @@
+{
+	"name": "hd-form",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "bunx --bun vite build --watch --mode development",
+		"watch": "bunx --bun vite build --watch --mode development",
+		"build": "bunx --bun vite build --mode production"
+	}
+}
