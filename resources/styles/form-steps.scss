@@ -1,0 +1,163 @@
+// Multi-step form styles — progress dots and step transitions.
+
+// Step fieldsets — active state (JS adds this class).
+[data-step] {
+	border: none;
+	padding: 0;
+	margin: 0;
+
+	&.hd-step--active,
+	&.hde-step--active {
+		display: block;
+	}
+}
+
+// Progress indicator.
+.hd-step-progress,
+.hde-step-progress {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--hd-step-progress-gap, 8px);
+	margin-bottom: var(--hd-step-progress-margin-bottom, 1.5rem);
+	padding: var(--hd-step-progress-padding, 1rem 0);
+
+	&__dot {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 6px;
+		position: relative;
+
+		&::before {
+			content: '';
+			width: var(--hd-step-dot-size, 32px);
+			height: var(--hd-step-dot-size, 32px);
+			border-radius: 50%;
+			border: 2px solid var(--hd-step-dot-border, #d0d5dd);
+			background: var(--hd-step-dot-bg, #fff);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition:
+				border-color 0.25s ease,
+				background-color 0.25s ease,
+				box-shadow 0.25s ease;
+
+			:is(.dark &) {
+				border-color: var(--hd-step-dot-border-dark, #475569);
+				background: var(--hd-step-dot-bg-dark, #1e293b);
+			}
+		}
+
+		// Connector line between dots.
+		& + & {
+			margin-left: var(--hd-step-connector-space, 32px);
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: calc(var(--hd-step-dot-size, 32px) / 2 - 1px);
+				right: calc(100% + 4px);
+				width: var(--hd-step-connector-width, 28px);
+				height: 2px;
+				background: var(--hd-step-dot-border, #d0d5dd);
+				transition: background 0.25s ease;
+
+				:is(.dark &) {
+					background: var(--hd-step-dot-border-dark, #475569);
+				}
+			}
+		}
+
+		&--active {
+			&::before {
+				border-color: var(--hd-step-active-color, var(--hd-color-primary, #2271b1));
+				background: var(--hd-step-active-color, var(--hd-color-primary, #2271b1));
+				box-shadow: 0 0 0 4px var(--hd-step-active-shadow, rgb(34 113 177 / 15%));
+			}
+		}
+
+		&--done {
+			cursor: pointer;
+
+			&::before {
+				border-color: var(--hd-step-active-color, var(--hd-color-primary, #2271b1));
+				background: var(--hd-step-active-color, var(--hd-color-primary, #2271b1));
+			}
+
+			&:hover::before {
+				transform: scale(1.12);
+			}
+
+			& + &::after,
+			+ .hd-step-progress__dot::after,
+			+ .hde-step-progress__dot::after {
+				background: var(--hd-step-active-color, var(--hd-color-primary, #2271b1));
+			}
+		}
+	}
+
+	&__label {
+		font-size: var(--hd-step-label-size, 0.75rem);
+		color: var(--hd-step-label-color, #64748b);
+		white-space: nowrap;
+		max-width: var(--hd-step-label-max-width, 80px);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: center;
+
+		:is(.dark &) {
+			color: var(--hd-step-label-color-dark, #94a3b8);
+		}
+
+		.hd-step-progress__dot--active &,
+		.hde-step-progress__dot--active & {
+			color: var(--hd-step-active-color, var(--hd-color-primary, #2271b1));
+			font-weight: 600;
+		}
+	}
+
+	// Bar mode modifier
+	&--bar {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 8px;
+		width: 100%;
+
+		.hd-step-progress__bar-info,
+		.hde-step-progress__bar-info {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: var(--hd-step-label-size, 0.875rem);
+			font-weight: 600;
+			color: var(--hd-step-label-color, #334155);
+
+			:is(.dark &) {
+				color: var(--hd-step-label-color-dark, #cbd5e1);
+			}
+		}
+
+		.hd-step-progress__bar-track,
+		.hde-step-progress__bar-track {
+			width: 100%;
+			height: var(--hd-step-bar-height, 8px);
+			background: var(--hd-step-dot-border, #e2e8f0);
+			border-radius: var(--hd-step-bar-radius, 9999px);
+			overflow: hidden;
+
+			:is(.dark &) {
+				background: var(--hd-step-dot-border-dark, #334155);
+			}
+		}
+
+		.hd-step-progress__bar-fill,
+		.hde-step-progress__bar-fill {
+			height: 100%;
+			background: var(--hd-step-active-color, var(--hd-color-primary, #2271b1));
+			border-radius: var(--hd-step-bar-radius, 9999px);
+			transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+		}
+	}
+}

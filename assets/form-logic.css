@@ -1,0 +1,1 @@
+[data-show-if],[data-hide-if]{transition:opacity .2s,max-height .3s;overflow:hidden}[data-show-if][hidden],[data-hide-if][hidden]{display:none}
